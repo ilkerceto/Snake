@@ -1,9 +1,9 @@
-#include<stdio.h>
+#include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
 #include <conio.h>
-#include<time.h>
-#include<ctype.h>
+#include <time.h>
+#include <ctype.h>
 #include <time.h>
 #include <windows.h>
 #include <process.h>
@@ -142,7 +142,7 @@ void load()
 {
     int row,col,r,c,q;
     gotoxy(36,14);
-    printf("Aan het laden...");
+    printf("Loading...");
     gotoxy(30,15);
     for(r=1; r<=20; r++)
     {
@@ -225,7 +225,7 @@ void Food()
 
             food.y+=11;
     }
-    else if(food.x==0)/*to create food for the first time coz global variable are initialized with 0*/
+    else if(food.x==0) /*to create food for the first time coz global variable are initialized with 0*/
     {
         food.x=rand()%70;
         if(food.x<=10)
@@ -463,3 +463,5 @@ void Up()
     if(!kbhit())
         head.y--;
 }
+
+/* Ilker Cetokoluk */
